@@ -20,7 +20,7 @@ def greedy_algorithm(budget):
     return items_needed
 
 
-def dp_algorithm(budget):
+def dynamic_programming(budget):
     dp = [[0] * (budget + 1) for _ in range(len(items) + 1)]
     items_list = list(items.items())
 
@@ -51,7 +51,7 @@ def main():
         print("Greedy Algorithm:")
         print(greedy_algorithm(budget))
         print("Dynamic Programming:")
-        print(dp_algorithm(budget))
+        print(dynamic_programming(budget))
 
 
 if __name__ == "__main__":
